@@ -1,0 +1,30 @@
+ create table Boss(IdBoss number(5) primary key,Name varchar2(10) not null,
+Age number(3) not null,Salary number(5) check(Salary between 1000 and 2000));
+/////////////////////////////////////////////////////////////////////////////
+create table Section(IdSection number(5) primary key,Type varchar2(10),
+IdBoss references Boss(IdBoss));
+////////////////////////////////////////////////////////////////////////////
+create table Deal(IdDeal number(5) primary key,typeDeal varchar2(10),DateEnd date,
+DateStart date,AmountDeal number(10) not null,AmountRemaining number(10));
+////////////////////////////////////////////////////////////////////////////
+create table Customers(IdCustomers number(5) primary key,Name varchar2(10),
+Gander varchar2(6)  default ('male'),Naionality varchar2(20) default ('Syria'),
+ContactNumber number(10) not null,Location varchar2(20) not null,
+IdDeal references Deal(IdDeal));
+//////////////////////////////////////////////////////////////////////////
+create table Realty(IdRealty number(5) primary key,TypeRealty varchar2(10),SpaceRealty num ber(10),
+RealtyLocatin varchar2(50),OwnersipStatus varchar2(15),RealtyOwner varchar2(15),
+ConlaclNumber number(10)  ,IdDeal references Deal(IdDeal),IdCustomers references Customers(IdCustomers));
+//////////////////////////////////////////////////////////////////////////
+create table Employe1(IdEmploye number(5) primary key,Name varchar2(10) not null,
+Salary number(10)  check(Salary between 1000 and 2000),Gender varchar2(10) not null,
+Nationality varchar2(10)  default ('Syria'),WorkHours number(5),DateOfBirth date,
+IdSection references Section(IdSection));
+/////////////////////////////////////////////////////////////////////////
+create table Employe1_Section(Id number(5) primary key,
+IdDeal references Deal(IdDeal),
+IdEmploye references Employe(IdEmploye));
+/////////////////////////////////////////////////////////////////////////
+create table Realty_Section(Id number(5) primary key,
+IdSection references Section(IdSection),IdRealty references Realty(IdRealty));
+/////////////////////////////////////////////////////////////////////////
