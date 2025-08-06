@@ -1,0 +1,62 @@
+begin 
+insert into boss values(1,'ahmad',30,2000);
+insert into boss values(2,'haseb',25,1500);
+insert into boss values(3,'abas',20,2000);
+end;
+begin
+insert into section values(1,'agar',1);
+insert into section values(2,'buying',1);
+insert into section values(3,'sale',1);
+end;
+begin
+insert into deal values(1,'agar','1/1/2021','1/1/2022',10000;2000);
+insert into section values(2,'buying','1/5/2019','1/5/2021',50000,5000);
+insert into section values(3,'sale','9/8/2015',5/6/2030,40000,10000);
+insert into deal values(4,'agar','1/1/2013','1/1/2016',60000;3000);
+insert into section values(5,'buying','1/5/2010','1/5/2024',25000,2000);+++++
+insert into section values(6,'sale','9/8/2015',5/6/2040,90000,10000);
+end;
+begin
+insert into customers values(1,'mahmad','male','syria',0953421556,'humas',1);
+insert into customers values(2,'abas','male','syria',0953432556,'idlib',2);
+insert into customers values(3,'maya','feminine','USD',0963658214,'hama',3);
+insert into customers values(4,'obaieda','male','syria',5367447918,'jiser',4);
+insert into customers values(5,'abd','male','syria',1598742320,'aleppo',5);
+insert into customers values(6,'fesal','male','syria',352681156336,'rastan',6);
+end;
+begin
+insert into realty values(1,'agar',1000,'humas','khalil','private',3256985214,1,2);
+insert into realty values(2,'buying',1500,'azaz','mahmuad','private',5369874210,3,6);
+insert into realty values(3,'sale',600,'batbo','guma','private',995687521,1,5);
+insert into realty values(4,'agar',1000,'humas','khalil','private',3256985214);
+insert into realty values(5,'buying',1500,'azaz,'mahmuad','private',5369874210);
+insert into realty values(6,'sale',600,'batbo','guma','private',995687521,1,3);
+end;
+begin
+insert into Employe1 values(1,'ahmad ',1000,'male',3526811563,'syria',8,'1/2/2000',2);
+insert into Employe1 values(2,'muhamad',900,'male',3526564897,'syria',6,'6/3/1999',1);
+insert into Employe1 values(3,'haseb ',1200,'male',3524781023,'syria',5,'1/2/2002',3);
+insert into Employe1 values(4,'kalil ',1200,'male',3526856336,'syria',4,'1/2/2001',4);
+insert into Employe1 values(5,'alabas ',1100,'male',3526811566,'syria',3,'1/2/2000',5);
+insert into Employe1 values(6,'rateb ',2000,'male',3521156336,'syria',2,'1/2/1996',6);
+
+end;
+begin
+insert into Employe1_section values(1,1,1);
+insert into Employe1_section values(2,2,2);
+insert into Employe1_section values(3,3,3);
+insert into Employe1_section values(4,1,4);
+insert into Employe1_section values(5,2,5);
+insert into Employe1_section values(6,3,6);
+end;
+begin
+insert into realty_section values(1,1,1);
+insert into realty_section values(2,2,2);
+insert into realty_section values(3,3,3);
+insert into realty_section values(4,1,4);
+insert into realty_section values(5,2,5);
+insert into realty_section values(6,3,6);
+
+end;
+
+
